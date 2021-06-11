@@ -17,11 +17,4 @@ asciidoctor {
             'idseparator': '_',
             'imagesdir' : 'assets/images'
     )
-//
-//    // Revisar esta configuracion
-//    baseDir = file('src/main/docs')
-//    sourceDir = file('src/main/docs')
-//    sources {
-//        include '/**/*.adoc'
-//    }
 }
