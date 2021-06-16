@@ -1,3 +1,13 @@
 = Documentación
+:reproducible:
+:revdate: {localdate}
+:toc-title: Índice
+:toc: left
+:sectanchors:
+:sectnums:
+:icons: font
+:sectlinks:
 
 == Ejemplos uso de asciidoctor
+
+include::src/docs/asciidoc/http/http.adoc[]

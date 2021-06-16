@@ -1,0 +1,8 @@
+[.text-justify]
+== HTTP
+
+=== Hypermedia As The Engine Of Application State (HATEOAS)
+
+=== Cache
+
+`Caching` es una de las restricciones mas importantes de la arquitectura Web, *caching response data*  puede ayudar a reducir la percepcion de latencia del cliente, incremanetar la disponibilidad y confiabilidad de una aplicación y controlar la carga de un `Web  Server`
