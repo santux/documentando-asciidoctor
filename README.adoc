@@ -1,0 +1,6 @@
+= Documentacion
+
+gradle clean asciidoctor && docker build -t docs:v1 .
+
+docker run -d -p 8080:80 --name docs -it docs:v1
+
