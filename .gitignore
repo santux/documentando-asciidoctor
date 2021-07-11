@@ -18,3 +18,5 @@ build
 
 # Ignore Intellij Idea files
 /**/.idea/
+
+/**/.DS_Store
