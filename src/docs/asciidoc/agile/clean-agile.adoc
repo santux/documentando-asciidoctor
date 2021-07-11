@@ -1,0 +1,103 @@
+= Clean Agile
+
+* TDD
+* Refactoring
+* Simple Design
+
+* Acceptance Tests
+* Continuous Integration
+
+
+* ++ Exploratory Testing
+
+
+* Cubrirnos los unos a los otros
+    ** Compartir conocimiento
+
+
+. Agile Practices
+    .. Pair Programming
+    .. Whole Team
+    .. Collective Ownership
+
+* Continuous Aggressive Learning
+
+== Planning
+
+* Business-facing practices
+    * Planning
+    * Small Releases
+    * Acceptance Tests
+    * Whole Team
+
+
+
+. _trivariate estimation_:
+
+    .. best-case
+    .. nominal-case
+    .. worst-case
+
+
+NOTE: PERT `Program Evaluation and Review Techniques`
+
+
+* *_story points_:* 
+
+=== Stories And Points
+
+A *_user story_* is an abbreviated description of a feature of the system, told from the point of view of a user.
+
+Typically, we write the story on an index card
+
+What makes a story manageable, schedulable, and estimable is the temporary lack of detail.
+
+Stories must start out cheap because a lot of them are going  to be modified, split, merged, or even discarded.
+
+Now we have a batch of story cards created in Iteration Zero. Others will be created later as new features and new ideas are encountered. In fact, the process of story creation never ends
+
+Points: They are a unit of estimated effort, not real time.
+
+NOTE: Law of Large Numbers
+
+
+=== Planning Iteration One
+
+* *_Iteration Planning Meeting_* *(IPM)* 
+
+    ** Should be scheduled to be one-twentieth the duration of the iteration, The IPM for a two-week iteration should require a half a day.
+    
+    ** The stakeholders will have previously read the estimated stories and sorted them in the order of business value. Some teams actually choose number for that business value.
+
+    ** The job of the stakeholders at the IPM is to choose the stories that will be implemented by the programmers and testers during the iterarion. To do this they need to know how many story points the programmers think they can complete. _This number is called the_ *-velocity-*
+
+=== Return on Investment
+
+.four-quadrant game
+[cols=">h,,",width="70%" ]
+|===
+||High Cost |Low Cost
+
+|High Value|*Do Later*
+|*Do Now*
+
+|Low Value|Never Do
+|Do Much Later
+|===
+
+NOTE: The stories that are valuable but cheap will be done right away.
+
+This is a _return on investment_ (ROI) calculation
+
+=== The Midpoint Check
+
+* There is some procedure for turning stories into working code. Think of it as moving story cards from the _planned pile_ to the _done pile_.
+
+* *_Iterations do not fail_* the purpose of an iteration is to generate data for managers.
+
+=== Yesterday's Weather
+
+* The best predictor of the progress of an iteration is the previous iteration. This is called *_yesterday's weather_*.
+
+=== The End of the Project
+
