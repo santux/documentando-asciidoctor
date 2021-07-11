@@ -101,3 +101,19 @@ This is a _return on investment_ (ROI) calculation
 
 === The End of the Project
 
+The project is not over when all the stories are implemented. The project is over when there are no more stories in the deck worth implementing.
+
+=== Stories
+
+*User stories are simple statements that we use as reminders of features*. We try not to record too much detail when we write the story because we know that those details will likely change.
+
+Stories follow a simple set of guidelines that we remember with the acronym *_INVEST_*.
+
+* *_I: Independent_*.
+* *_N: Negotiable_*.
+* *_V: Valuable_*.
+* *_E: Estimable_*.
+* *_S: Small_*.
+* *_T: Testable_*.
+
+
