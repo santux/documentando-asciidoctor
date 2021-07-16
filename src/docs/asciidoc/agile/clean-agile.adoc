@@ -112,8 +112,144 @@ Stories follow a simple set of guidelines that we remember with the acronym *_IN
 * *_I: Independent_*.
 * *_N: Negotiable_*.
 * *_V: Valuable_*.
+
+    ** Refactoring is _never_ a story. Architecture is never a story. Code cleanup is never a story. *_A story is always something that the business values_*
+
 * *_E: Estimable_*.
 * *_S: Small_*.
 * *_T: Testable_*.
 
+=== Story Estimation
 
+* Wideband Delphi
+* Flying Fingers
+* Shirt Sizes: Small, Medium, and Large
+* Planning Poker
+
+=== Splitting, Merging, and Spiking
+
+=== Managing the Iteration
+
+* The goal of each iteration is to produce data by getting stories done. The team should focus on stories rather than tasks within stories.
+
+* It is far better to get 80% of stories done than it is get each story 80% done. _Focus on driving the stories to completion_.
+
+* As soon as the planning meeting ends, the programmers should choose the stories for which they individually be responsible.
+
+* Managers and leads will be tempted to assign stories to programmers. *_This should be avoided_*
+
+=== QA and Acceptance Tests
+
+* The tests for stories  that are scheduled for early completion should be done early.
+
+* If not all the _acceptance tests_ are ready by the midpoint, then some of the developers should stop working on stories and start working on acceptance tests.
+
+* This will likely mean that not all the stories will be completed in this iteration, *_but a story cannot be completed without the acceptance tests anyway_*.
+
+* Just be sure that the programmers working on a story are not also writing the acceptance tests for that story.
+
+* If a QA continues to miss the midpoint deadline, one iteration after another, then the ratio of QA engineers to developers is likely wrong.
+
+* The definition of "done" is this: *_acceptance tests pass_*.
+
+=== The Demo
+
+* The iteration ends with a brief demostration of the new stories to the stakeholders.
+    ** The demo should include showing that all the acceptance tests run.
+    ** Including all _previous_ acceptance tests and all _unit tests_.
+    ** It should also show off the newly added features. It is best if the stakeholders themselves operate the system.
+
+=== Velocity
+
+* The last act of the iteration is to update the velocity and burn-down charts.
+
+    ** Only the points for stories that have passed their acceptance tests are recorded on these charts.
+    ** After several iterations. both of these charts will begin to show a slope.
+    ** The burn-down slope predicts the date for the next major milestone.
+    ** *_The velocity slope tells us how well the team is being managed_*.
+
+==== Rising Velocity
+    * Velocity is a *_measurement_* not an objective.
+
+==== Falling Velocity
+    * If the velocity chart shows a consistent negative slope, then the most likely cause is the quality of the code.
+
+=== Small Releases
+
+* The practice of *_Small Releases_* suggests that a development team should release their software as often as posible.
+
+* *_Continuous Delivery_*: the practice of releasing the code to production after every change.
+
+=== Source Code Control
+
+* _pessimistic lock_
+
+* Punched Cards
+* Tapes
+* Disks and SCCS
+* Subversion
+* Git and Tests
+
+==== Historical Inertia
+
+* Unfortunately, it is difficult for organizations to shake off the behavior of the past. The cycle time of days, weeks, and months is deeply ingrained in the culture of many teams and has spread to QA, to management, and to the expectations of the stakeholders.
+
+==== Small Releases
+
+* Agile attempts to break that historical inertia by driving the team to shorter and shorter release cycles.
+
+* The term *_"release"_* means that the software is technically ready to be deployed. The decision to deploy becomes solely a business decision.
+
+=== Acceptance Tests
+
+* This practice is one of the least understood, least used and most confused of all the Agile practices. This is strange because the underlying idea is remarkably simple: *_Requirements should be specified by the business_*.
+
+* *_specify_* (business) vs *_precisely_* (programmers): Something in the middle of these two extremes is necessary.
+
+* So whats is a specification? A specification is, by its very nature, a _test_.
+
+** *_When the user enters a valid username and password, and then clicks "login", the system will present the "Welcome" page._*
+
+* It should also be obvious that this test could automated.
+
+* Who writes these automated tests? QA
+
+=== Tools and Methodologies
+
+==== Behavior-Driven Development
+
+* The goal of `Behavior-Driven Development (TDD)` was to remove the techie jargon from the tests and make the tests appear more like specifications
+
+* Using three special adverbs:
+
+    ** Given
+    ** When
+    ** Then
+
+=== The Practice
+
+* *_Definition of Done_*: The developers integrate those tests into the continuous build. Those tests become the Definition of Done for the stories in the iteration.
+
+* A story is not specified until its acceptance test is written. A story is not complete until its acceptance test passes.
+
+==== Business Analysts and QA
+
+* Acceptance tests are a collaborative effort between business analysts, QA, and the developers.
+
+    ** *_Business Analysts_*: Specify the happy paths. That's because they have enough to do in their role of communicating between the programmers and the stakeholdets.
+
+    ** *_QA_*: QA's role is write the unhappy paths. QA folks are hired for their ability to figure out how to break the system.
+
+    ** *_Developers_*: Work with QA and business analysts to ensure that the tests make sense from a technical point of view.
+
+=== Whole Team
+
+* This practice was initially calle *_On-Site Customer_*. The idea was that the shorter the distance between the users and the programmers, the better the communication, and the faster and more accurate the development.
+
+* The *_customer_* was a metaphor for someone, or some group, who understood the needs of the users, and who was co-located with the development team.
+
+* In Scrum, the customer is called the Product Owner. This is the person who chooses stories, sets priorities, and provides immediate feedback.
+
+* A development team is composed of many roles including managers, testers, technical writers.
+
+* *The goal of the practice is to minimize the physical distance between these roles*
