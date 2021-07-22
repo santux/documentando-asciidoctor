@@ -236,7 +236,7 @@ Stories follow a simple set of guidelines that we remember with the acronym *_IN
 
 * Acceptance tests are a collaborative effort between business analysts, QA, and the developers.
 
-    ** *_Business Analysts_*: Specify the happy paths. That's because they have enough to do in their role of communicating between the programmers and the stakeholdets.
+    ** *_Business Analysts_*: Specify the happy paths. That's because they have enough to do in their role of communicating between the programmers and the stakeholders.
 
     ** *_QA_*: QA's role is write the unhappy paths. QA folks are hired for their ability to figure out how to break the system.
 
@@ -253,3 +253,45 @@ Stories follow a simple set of guidelines that we remember with the acronym *_IN
 * A development team is composed of many roles including managers, testers, technical writers.
 
 * *The goal of the practice is to minimize the physical distance between these roles*
+
+== TEAM PRACTICES
+
+_Team Practices of Agile_ these practices govern the relationship of the team members with one another and with the product they are creating.
+
+The Practices we will discuss are:
+
+* Metaphor
+* Sustainable Pace
+* Collective Ownership
+* Continuous Integration
+* Then we'll talk briefly about so-called _Standup Meetings_
+
+=== _Metaphor_
+
+* A metaphor can provide a vocabulary that allows the team to communicate efficiently.
+
+==== Domain-Driven Design
+
+In his groundbraking book _Domain-Driven Design_, Eric Evans solved the metaphor problem, in that book, he coined the term *_Ubiquitous Language_*, whoich is the name that should have been given to the *_Metaphor_* practice.
+
+=== _Sustainable Pace_
+
+==== Overtime
+
+* I realized that my worst technical mistakes were made during those periods of frenetic late-night energy
+
+==== Marathon
+
+* I learned that a software project is a marathon, not a sprint, nor a sequence of sprints
+
+==== Dedication
+
+==== Sleep
+
+=== _Collective Ownership_
+
+* *_Collective Ownership_* does not mean that you cannot specialize. As systems grow in complexity, specialization  becomes an absolute necessity.
+
+* There are systems tha simply cannot be understood in both entirety and detail.
+
+* When a team practices *_Collective Ownership_*, knowledge becomes distributed across the team. Each team member gains a better understanding of the boundaries between modules and of the overall way that the system works. _This drastically improves the ability of the team to communicate and make decisions_.
