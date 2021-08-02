@@ -295,3 +295,97 @@ In his groundbraking book _Domain-Driven Design_, Eric Evans solved the metaphor
 * There are systems tha simply cannot be understood in both entirety and detail.
 
 * When a team practices *_Collective Ownership_*, knowledge becomes distributed across the team. Each team member gains a better understanding of the boundaries between modules and of the overall way that the system works. _This drastically improves the ability of the team to communicate and make decisions_.
+
+== Chapter 5 : TECHNICAL PRACTICES
+
+* TDD
+* Refactoring
+* Simple Design
+* Pair Programming
+
+=== TEST-DRIVEN DEVELOPMENT
+
+==== The Three Rules of TDD
+
+TDD can be described with three simple rules.
+
+* Do not write any production code until you have first written a test that fails due to the lack of that code.
+
+* Do not write more of a test than is sufficient to fail and failing to compile counts as a failure.
+
+* Do not write more production code than is sufficient to pass the currently failing test.
+
+==== Debugging
+
+==== Documentation
+
+==== Design
+
+* *_When you write the test first_*, something very different happens. You *_cannot_* write a function that is hard to test.
+
+    ** Since you are writing the test first, you will naturally design the function you are testing to be easy to test. *_How do you keep functions easy to test?_* You decouple them. Indeed, testability is just a synonym for decoupling.
+
+* It is for this reason tha *TDD* is often called a *design technique*. The Three Rules forces you into a much higher degree of decoupling.
+
+=== REFACTORING
+
+* *_Refactoring_* is the practice of *_improving_* the structure of the code without altering the behavior, as defined by the tests.
+
+    ** We make changes to the names, the classes, the functions, and the expressions without breaking any of the tests.
+    ** We improve the structure of the system, without affecting the behavior.
+    ** This practice couples strongly with TDD.
+
+* The kinds of changes made during refactoring range from trivial cosmetics to deep restructurings.
+
+    ** The changes might be simple name changes or complex reshufflings of switch statements to polymorphics dispatches.
+    ** Large functions will be split into smaller, better-named, functions.
+    ** Arguments lists will be changed into objects.
+    ** Classes with many methods will be split into many smallers classes.
+    ** Functions will be moved from one class to another.
+    ** *Dependencies will be inverted, and modules will be moved across architectural boundaries*.
+
+==== Red/Green/Refactor
+
+. First, we create a test that fails.
+. Then we make the test pass.
+. Then we clean up the code.
+. Return to step 1.
+
+---
+
+* *_Refactoring is a continuous process_*, and not one that is performed on a scheduled basis.
+
+* The word *_Refactoring_* should never appear on a schedule. Refactoring is not the kind of activity that appears on a plan.
+
+* Refactoring is simply part of our minute-by-minute, hour-by-hour approach to writing software.
+
+==== Bigger Refactorings
+
+
+
+=== SIMPLE DESIGN
+
+The practice of *_Simple Design_* is one of the goals of Refactoring. Simple Design *_is the practice of writing only the code that is required_* with a structure that keeps it simplest, smallest, and most expensive.
+
+Kent Beck's rules of Simple Design are as follows:
+
+. Pass all the tests.
+. Reveal the intent.
+. Remove duplication.
+. Decrease elements.
+
+[NOTE]
+.Design Patterns: Removing Duplication
+====
+* Template method
+* Strategy
+* Decorator
+* Visitor
+====
+
+The goal of Simple Design is to keep the *_design weight_* of the code as small as practicable.
+
+==== Design Weight
+
+=== PAIR PROGRAMMING
+
