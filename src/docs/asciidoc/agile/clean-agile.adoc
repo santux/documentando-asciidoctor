@@ -389,3 +389,147 @@ The goal of Simple Design is to keep the *_design weight_* of the code as small 
 
 === PAIR PROGRAMMING
 
+== 6 BECOMING AGILE
+
+=== Agile Values
+
+Kent Beck named the four values of Agile long ago.
+
+. _Courage_
+. _Communication_
+. _Feedback_
+. _Simplicity_
+
+==== Courage
+
+There is a difference between *courage* and *recklessness*
+
+* It requieres *_courage_* to deploy a minimum feature set. It also requires courage to maintain high code quality and maintain high-quality disciplines.
+* It is *_reckless_* to deploy code that you are not highly confident in or that has an unsustainable design. It is reckless to conform to a schedule by *sacrificing quality*
+
+==== Communication
+
+* A team that sits together and communicates frequently can work miracles.
+
+==== Feedback
+
+* Providing *_rapid feedback_* to the folks who make important decisions.
+* Feeedback is what makes the team work so effectively and what drives a project to a beneficial outcome.
+
+==== Simplicity
+
+* *_being direct_*
+
+* Keep the code simple. Keep the team simpler.
+
+=== The menagerie
+
+* *_Ignore the menagerie_*: It is easy to become confused by the vast numbers of Agile methods out there. In the end, regardless of which method you choose, you will wind up tuning and tweaking the process to fit your own needs.
+
+* Adopt the full *_Circle of Life_*, and most especially, the technical practices.
+
+image::../../assets/images/agile_circle_of_life.jpg[]
+
+=== Transformation
+
+The transition from non-Agile to Agile is a transition in values.
+
+* The values of Agile development include:
+** risk-taking
+** rapid-feedback
+** intense
+** hight-bandwidth communication
+
+=== The Subterfuge
+
+=== Faking it
+
+
+=== Agile Tools
+
+==== Software Tools
+
+Software developers must master a number of core tools:
+
+* At least one programming language, and often more
+* An integrated development environment or programmer's editor (vim, Emacs, etc.)
+* Various data formats (JSON, XML, YAML, etc.) and markup languages (including HTML)
+* Command-Line and script-based interaction with the operating system
+* Source repository tools (Git. Is there another choice?)
+* Continuous integration/build
+* *_Deployment/server management tools_*: Docker, Kubernetes, Ansible, Chef, Puppet, etc.
+* *_Communications tools_*: email, Slack, the English Language (!)
+* *_Testing tools_*: Unit Testing frameworks, Cucumber, Selenium, etc.
+
+Great tools do the following:
+
+* Help people accomplish their objectives
+* Can be learned "well enough" quickly
+* Become transparent to users
+* Allow adaptation and exaptation
+* Are affordable
+
+==== Physical Agile Tools
+
+* Whiteboards, tape, index cards, markers
+
+=== ALMs for the Not-Poor
+
+Quickly after the onset of Agile, numerous software systems for managing Agile projects appeared.
+
+* These `*Agile Lifecycle Management (ALM)*` systems ranging from open source to polished and expensive *_"shrink-wrapped"_* products
+* Allow you to *_collect Agile team data_*
+* *_Manage long lists of features_* (backlogs)
+* Produce sophisticated graphs, cross-team summary views, and do some numerical processing
+
+ALM tools have beneficial features:
+
+* Most allow remote iterations
+* Track history
+* Handle some of the dirty-work
+
+
+[quote, By Damon Poole, May 14 2019]
+Agile as an algorithm for finding the highest-value-producing features in the market and then turning them into revenue faster
+
+=== Growing Your Agile Adoption
+
+Here is a list of individual practices to consider for your Agile adoption backlog, consider this a starting place. For instance, rather than adopting Scrum, Kanban, XP, or one of the scaling frameworks, consider which single practice from the list below is most relevant.
+
+* The practices of Kanban
+    ** Making work visible (card wall)
+    ** Limitin work in progress
+    ** Pulling work through the system
+* The practices of Scrum and XP
+    ** Short daily team meetings
+    ** A product Owner
+    ** A process facilitator (aka Scrum Master)
+    ** Retrospectives
+    ** A cross-functional team
+    ** User stories
+    ** Small releases
+    ** Refactoring
+    ** Writing tests first
+    ** Pair programming
+* Align team events
+* Escalation trees
+    ** well-defined escalation path
+    ** Scrums of Scrums
+    ** Retrospective of retrospectives
+    ** Scrum@Scale's fractal pattern
+    ** Executive Action Team
+* Regular interteam interaction
+    * Regular interaction between Scrum Master, Product Owners and team members
+* Portafolio Kanban
+* Minimum Viable Increments
+    ** Releasing small updates on a frequent basis
+    ** Sometimes as frequently as multiple times per day
+
+=== Going Big By Focusing On The Small
+
+* The SOLID principles
+* Small, valuable user stories
+* Small, frequent releases
+* Continuous Integration
+* Simple Design
+*
