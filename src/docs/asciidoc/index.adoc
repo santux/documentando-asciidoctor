@@ -10,4 +10,12 @@
 
 == Ejemplos uso de asciidoctor
 
-include::src/docs/asciidoc/http/http.adoc[]
+include::http/http.adoc[]
+
+include::code/quality_code.adoc[]
+
+include::database/database_design.adoc[]
+
+include::utils/tricks.adoc[]
+
+include::agile/clean-agile.adoc[]
