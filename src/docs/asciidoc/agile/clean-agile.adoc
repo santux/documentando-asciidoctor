@@ -1,4 +1,4 @@
-= Clean Agile
+== Clean Agile
 
 * TDD
 * Refactoring
@@ -428,7 +428,7 @@ There is a difference between *courage* and *recklessness*
 
 * Adopt the full *_Circle of Life_*, and most especially, the technical practices.
 
-image::../../assets/images/agile_circle_of_life.jpg[]
+image::../assets/images/agile_circle_of_life.jpg[]
 
 === Transformation
 
