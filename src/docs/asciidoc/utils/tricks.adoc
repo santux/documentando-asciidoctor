@@ -1,0 +1,11 @@
+== Trucos
+
+
+`➜  documentando-asciidoctor git:(main) ✗ docker build -t documentacion:latest .`
+
+`➜  documentando-asciidoctor git:(main) ✗ docker run --name documentacion -p 8080:8080 -d 2ec020395a55`
+
+`➜  documentando-asciidoctor git:(main) ✗ docker run --name documentacion -d -p 8080:80 -d documentacion:latest`
+
+`➜  documentando-asciidoctor git:(main) ✗ docker run --name documentacion -d -p 80:80 -d documentacion:latest`
+

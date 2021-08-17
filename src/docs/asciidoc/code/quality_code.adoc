@@ -1,0 +1,17 @@
+== Código de Calidad
+
+image::../assets/images/git_commit_2x.png[]
+
+=== Como escribir un: `*Git Commit Message*`
+
+==== Introducción:
+
+
+==== Las siete reglas
+
+. Separa el encabezado del cuerpo del mensaje con un espacio de una línea.
+. Limitar la longitud de la linea del encabezado a *_50 caracteres_*.
+. Poner en *_mayúscula_* la primera letra de la línea dele encabezado.
+. No terminar la línea de encabezado con un punto *_"."_*
+. Usar un modo de redacción imperativo.
+. El cuerpo del mensaje no debe ser mayor a 72 caracteres.
