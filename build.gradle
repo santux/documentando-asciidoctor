@@ -1,6 +1,6 @@
 plugins {
-    id "org.asciidoctor.jvm.pdf" version "${asciidoctorVersion}"
     id "org.asciidoctor.jvm.convert" version "${asciidoctorVersion}"
+    id "org.asciidoctor.jvm.pdf" version "${asciidoctorVersion}"
 }
 
 group = 'org.santux.docs'
@@ -11,13 +11,16 @@ repositories {
 }
 
 asciidoctor {
-
-    baseDir = file('src/docs/assets/images')
-
     attributes (
             'encoding' : 'utf-8',
             'idprefix' : 'id_',
-            'idseparator': '_',
-            'imagesdir' : 'assets/images'
+            'idseparator': '_'
     )
+
+    baseDir = file('src/docs/asciidoc')
+
+    resources {
+        from ("${sourceDir}/assets")
+        into '/assets'
+    }
 }
