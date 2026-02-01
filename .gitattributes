@@ -1,9 +1,54 @@
-#
-# https://help.github.com/articles/dealing-with-line-endings/
-#
-# These are explicitly windows files and should use crlf
-*.bat           text eol=crlf
+# -----------------------------------------------------------------------------
+# CONFIGURACIÓN GLOBAL
+# -----------------------------------------------------------------------------
+# Detectar texto automáticamente y normalizar a LF en el repo
+* text=auto
 
-# Imagenes Binary
-*.jpg binary
-*.png binary
+# -----------------------------------------------------------------------------
+# CONFIGURACIÓN Y RECURSOS (Asegura consistencia en entornos de build)
+# -----------------------------------------------------------------------------
+*.xml        text eol=lf
+*.properties text eol=lf
+*.json       text eol=lf
+*.yml        text eol=lf
+*.yaml       text eol=lf
+*.gradle     text eol=lf
+*.sql        text eol=lf
+*.md         text eol=lf
+*.txt        text eol=lf
+*.sh         text eol=lf
+*.bat        text eol=crlf
+
+# -----------------------------------------------------------------------------
+# ARCHIVOS BINARIOS (No se tocan los bytes)
+# -----------------------------------------------------------------------------
+*.jar        binary
+*.war        binary
+*.class      binary
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.gif        binary
+*.ico        binary
+*.pdf        binary
+
+# -----------------------------------------------------------------------------
+# Gradle
+# -----------------------------------------------------------------------------
+gradlew             text eol=lf
+*.gradle            text eol=lf
+*.gradle.kts        text eol=lf
+gradle.properties   text eol=lf
+# Los archivos binarios del wrapper no se deben tocar
+gradle-wrapper.jar  binary
+
+# -----------------------------------------------------------------------------
+# Asciidoc - Documentación
+# -----------------------------------------------------------------------------
+*.adoc      text eol=lf diff=asciidoc
+*.asciidoc  text eol=lf diff=asciidoc
+
+# -----------------------------------------------------------------------------
+# Configuración
+# -----------------------------------------------------------------------------
+.gitignore           text eol=lf
