@@ -14,7 +14,7 @@ asciidoctor {
     attributes (
             'encoding' : 'utf-8',
             'idprefix' : 'id_',
-            'idseparator': '_'
+            'idseparator': '-'
     )
 
     baseDir = file('src/docs/asciidoc')

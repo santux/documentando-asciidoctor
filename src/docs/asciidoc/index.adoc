@@ -1,4 +1,5 @@
 = Documentación
+J. de los Santos <patito@midominio.com>
 :reproducible:
 :revdate: {localdate}
 :toc-title: Índice
